@@ -1,0 +1,51 @@
+
+body {
+    font-family: cursive;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.custom-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.custom-nav .nav-item {
+    margin-right: 10px;
+}
+
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.textoabajo {
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.footer {
+    background-color: #74441d;
+    color: #f0dbac;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #f0dbac;
+    text-decoration: none;
+}
+
+
+.footer h2 {
+    margin-bottom: 10px;
+}
