@@ -13,5 +13,20 @@ async function fetchPorygon() {
     }
 }
 
-// Llamar a la función para obtener la información al cargar la página
+
 window.onload = fetchPorygon;
+
+// 2da API de gatos
+const catImg = document.getElementById('cat-img');
+
+
+async function getRandomCat() {
+  const response = await fetch("https://api.thecatapi.com/v1/images/search");
+  const data = await response.json();
+  return data[0];
+}
+
+async function handleClick() {
+  const img = await getRandomCat();
+  catImg.src = img.url;
+}
